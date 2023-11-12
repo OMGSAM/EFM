@@ -1,25 +1,29 @@
 EXERCICE 1
 algorithme Bisextile
 Fonction  est_bissextile( annee : reel ) 
+DEBUT
 si ((annee % 400 = 0)  ou (annee % 100 <>0 et annee % 4 =0 ))
 retourne oui 
 sinon 
 retourne non 
+FIN
 
  §§§§§§§§§§
 
 Fonction  annee_bissextile( siecle : reel ) : reel
+DEBUT
 
 pour siecle de 1900 a 2000 pas 1 faire :
 si ((siecle % 400 = 0)  ou (siecle % 100 <>0 et siecle % 4 =0 ))
 retourne siecle 
 ecrire ("les annes bisextiles du siecle precedant ", siecle )
-
+FIN
 
 EXERCICE 2 :
 ALGORITHME MATRICE 
 Fonction (matrice (T() tabeau reeel ; N,P : reel ) reel 
 variables i,j entier 
+DEBUT
 x reel
 si (N>0 et N <=10)   et (P>0 et P <=10)
 lire (N,P)
@@ -33,3 +37,22 @@ finpour
 pour i de 1 a N pas 1 faire :
 pour j de 1 a P pas 1 faire :
 ecrire ("laffichage du matrice" , T[i,j])
+
+
+EXERICICE 3
+ALGORITHME TABLEAU
+VARIABLES 
+DEBUT
+ecrire ("donnez la taille du tableau ")
+lire (N)
+pour i de 1 a N PAS 1 faire 
+ecrire  ("donnez lelement :" , i)
+lire T(i)
+finpour
+ 
+x<-1
+tantque x<=N-3
+T(x)+T(x+1)+T(x+2)+T(x+3)=Y
+x<x+4
+
+
